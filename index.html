@@ -3,62 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pasta Alfredo Recept</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Marockansk Couscous </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Grundinställningar för layout */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      background-color: red;
+      color: #333;
+    }
+
+
+    /* Rubrik-området */
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+
+
+    /* Info-området */
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    /* Bild */
+    img {
+      max: width 80%;;
+      height: 60%;
+      border-radius: 8px;
+    }
+
+
+    /* Ingrediens-området */
+    .ingredients, .instructions, .links {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    /* Punktlista för ingredienser */
+    .ingredients-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      text-align: left;
+      width: 100%;
+      max-width: 600px;
+    }
+
+
+    /* Numrerad lista för instruktioner */
+    .instructions-list {
+      list-style-type: decimal;
+      padding-left: 20px;
+      text-align: left;
+      width: 100%;
+      max-width: 600px;
+    }
+
+
+    /* Länksektion */
+    .links a {
+      text-decoration: none;
+      color: #007BFF;
+      margin: 5px 0;
+    }
+
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+
+  </style>
 </head>
 <body>
-  <div class="container">
 
-    <!-- Rubrik-område -->
-    <header class="header">
-      <h1>Recept: Pasta Alfredo</h1>
-      <p>En klassisk italiensk pastarätt med krämig Alfredo-sås.</p>
-    </header>
 
-    <!-- Info-område -->
-    <div class="info">
-      <h2>Om Maträtten</h2>
-      <p>Pasta Alfredo är en italiensk favorit som består av pasta täckt i en rik och krämig sås gjord på smör, grädde och parmesanost. Rätten är enkel men full av smak och älskas över hela världen.</p>
-      <img src="pasta-alfredo.jpg" alt="En tallrik Pasta Alfredo" class="food-image">
-    </div>
-
-    <!-- Ingredienser-område -->
-    <div class="ingredients">
-      <h2>Ingredienser</h2>
-      <ul>
-        <li>400 g fettuccine</li>
-        <li>2 dl vispgrädde</li>
-        <li>1 dl smör</li>
-        <li>1,5 dl riven parmesanost</li>
-        <li>Salt och svartpeppar efter smak</li>
-        <li>Hackad persilja för garnering (valfritt)</li>
-      </ul>
-      <img src="ingredients.jpg" alt="Ingredienser till Pasta Alfredo" class="ingredients-image">
-    </div>
-
-    <!-- Instruktions-område -->
-    <div class="instructions">
-      <h2>Instruktioner</h2>
-      <ol>
-        <li>Koka pastan enligt instruktionerna på förpackningen tills den är al dente. Häll av vattnet och ställ pastan åt sidan.</li>
-        <li>Smält smöret på medelhög värme i en stor stekpanna. Tillsätt grädden och låt blandningen sjuda i 2-3 minuter.</li>
-        <li>Tillsätt parmesanosten och rör om tills osten smälter och såsen blir jämn och krämig.</li>
-        <li>Blanda ner pastan i såsen och rör om så att pastan täcks ordentligt av såsen.</li>
-        <li>Smaka av med salt och peppar. Garnera med hackad persilja om så önskas.</li>
-      </ol>
-    </div>
-
-    <!-- Länkar för att köpa ingredienser -->
-    <div class="links">
-      <h2>Handla Ingredienser</h2>
-      <p>Här är några länkar till var du kan köpa ingredienserna:</p>
-      <ul>
-        <li><a href="https://www.exempel.se/parmesanost">Köp Parmesanost</a></li>
-        <li><a href="https://www.exempel.se/fettuccine">Köp Fettuccine</a></li>
-        <li><a href="https://www.exempel.se/grädde">Köp Vispgrädde</a></li>
-      </ul>
-    </div>
-
+  <!-- Rubrik-område -->
+  <div class="header">
+    <h1>Traditionellt Marockansk couscous
+    </h1>
   </div>
+
+
+  <!-- Info-område -->
+  <div class="info">
+    <h2>Om Maträtten</h2>
+    <p>Couscous är en Nordafrikansk rätt som kan tillagas på många olika vis. Det finns bland annat couscous med fisk, kyckling, kött eller med bara grönsaker. De flesta grönsaker funkar alldeles utmärkt att tillsättas i grytan och man kan variera kryddningen efter smak. Fantastiskt god och delikat rätt som är full med smaker. </p>
+    <img src="img/2_lunch-or-dinner-with-moroccan-couscous-or-tajine.jpg" alt="En Churrasco Burgare fylld med saftigt kött, avokadosås och fräscha tillbehör">
+  </div>
+
+
+  <div class="ingredients">
+    <h2>Ingredienser</h2>
+    <img src="img/couscous2.jpg" alt="">
+    <ul class="ingredients-list">
+      <li>6 portioner couscous</li>
+      <li>1 kg lammkött eller kyckling</li>
+      <li>2 gula lökar</li>
+      <li>5 små zucchini eller 1 stor</li>
+      <li>5 morötter</li>
+      <li>5 stycken potatisar</li>
+      <li>1 bit pumpa eller 1 sötpotatis</li>
+      <li>1-2 färska chili eller 1 paprika</li>
+      <li>400 g kokta kikärtor</li>
+      <li>4-5 msk tomatpuré</li>
+      <li>Ca 1-1,5 liter vatten</li>
+      <li>2 kanelstänger eller 1 tsk kanelpulver</li>
+      <li>2 tsk gurkmeja</li>
+      <li>2 tsk paprikapulver</li>
+      <li>1 tsk ingefärapulver</li>
+      <li>1 tsk spiskumminpulver</li>
+      <li>1 tsk korianderpulver</li>
+      <li>2-3 st lagerblad</li>
+      <li>2 st buljongtärningar (kött- eller kycklingbuljong)</li>
+      <li>Salt och peppar</li>
+      <li>Stekning:
+        Olivolja eller neutral olja</li>
+        <li>TIPS! De flesta grönsaker funkar utmärkt att tillsättas i grytan. Du kan tex ha i vitkålsklyftor, sötpotatis, palsternacka, aubergine, kålrot osv. Du kan även kryddsätta den med en nypa saffran om du gillar det.</li>
+
+
+    </ul>
+  </div>
+
+
+  <!-- Instruktions-område -->
+  <div class="instructions">
+    <h2>Instruktioner</h2>
+    <ol class="instructions-list">
+      <li>Hacka kött eller kyckling i önskad storlek och ställ åt sidan. Hacka grönsakerna i stora bitar. Hacka löken i strimlor eller tärningar. Hetta upp olja i en stor gryta och börja med att steka löken tills den får lite färg. Tillsätt kött/kyckling och alla kryddor förutom lagerblad och buljongtärningar. Stek under omrörning tills köttet får färg. Vänd i tomatpuré och stek lite till. Häll över 1 liter hett vatten, smula i buljongtärningarna och tillsätt lagerbladen.
+        Låt grytan koka upp, rör om och låt sedan puttra på medelvärme under lock. Om du använder kyckling i grytan tillsätter du grönsakerna och kikärtorna efter ca 10 min och låter dem koka med i grytan tills de mjuknar. Om du använder kött vänder du i grönsaker och kikärtor när köttet nästan är klart och behöver ca 30 minuters koktid. Späd eventuellt ut med mer vatten om grytan känns torr under tiden den kokar.</li>
+      <li>Tillagning av couscous, 3 olika metoder:
+        Börja med blanda 3 msk olivolja eller smält smör med 4 dl couscous och 3 msk hett vatten. Blanda med händerna och rör om tills oljan och couscousen har blandats samman. Välj sedan ett av tillagningssätten nedan.</li>
+      <li>Ångkokning: Lägg couscousen i en ånginsats och ställ över grytan som puttrar långsamt. Det är på grytan med grönsaker och tomatsås som du ska ställa den på. Täck ånginsatsen med ett lock och låt grynen tillagas långsamt av ångan som bildas av grytan.</li>
+      <li>I micron: Lägg couscousgrynen i en skål och häll 5-6 msk hett vatten över. Täck skålen med något värmetålig, som tex en tallrik eller plastfolie. Kör på högsta effekt i 2 min, ta ut ur micron och fluffa till grynen med en gaffel. När grynen svalnat smular du till dem med fingrarna.</li>
+      <li>Med hett vatten: Koka upp 2 dl vatten, häll över couscousen och täck direkt med ett lock. Låt stå i 5 mHäll upp couscousgrynen på ett fat, arrangera grönsakerna, köttet och såsen snyggt över. Servera genast.</li>
+    </ol>
+  </div>
+
+
+  <!-- Länkar-område -->
+  <div class="links">
+    <h2>Köp Ingredienser</h2>
+    <p><a href="https://exempelbutik.se/kott" target="_blank">Köp nötkött här</a></p>
+    <p><a href="https://exempelbutik.se/gronsaker" target="_blank">Köp grönsaker här</a></p>
+    <p><a href="https://exempelbutik.se/kryddor" target="_blank">Köp kryddor här</a></p>
+  </div>
+
+
 </body>
 </html>
